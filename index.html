@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allison&family=Alumni+Sans:wght@100&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allison&family=Crimson+Text:ital@1&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <header class="navbarr">
+            <h1 class="text-white text-center">Lilly Sabri</h1>
+            <h4 class="text-black text-center"> bio.fm/lillysabri</h4>
+        </header>
+
+
+
+        <!-- TOP PAGE BOX -->
+        <div class="beginBox">
+
+            <div class="head_design"></div>
+            <div class="head_design2"></div>
+            <div class="imgBox">
+                <img src="24.jpg" alt="">
+            </div>
+
+            <div class="header">
+                <div class="shopping_cart">
+                    <i class="fas fa-shopping-cart fa-4x cart"></i>
+                </div>
+            </div>
+
+            <div class="info">
+                <p>Lilly Sabri</p>
+
+            </div>
+            <div class="moreInfo">
+                <h5>I’m Lilly Sabri,
+                    founder of Lean with Lilly.
+                    I’ve been a Chartered Physiotherapist since 2010,
+                    APPI Pilates instructor, Fitness, Heath and Lifestyle
+                    Influencer.
+                </h5>
+            </div>
+            <div class="designBox">
+                <i class="fas fa-star fa-2x star1"></i>
+                <i class="fas fa-star star2"></i>
+                <i class="fas fa-star fa-2x star3"></i>
+                <i class="fas fa-star star4"></i>
+                <i class="fas fa-star fa-4x star5"></i>
+            </div>
+            <div class="downArrow">
+                <a href="#container11" id="href"> <i class="fas fa-chevron-down
+                        fa-3x text-white-50"></i></a>
+            </div>
+        </div>
+        <!-- TOP PAGE BOX ENDS -->
+
+
+
+        <!-- BOTTOM PAGE BOX -->
+        <div class="container1" id="container11">
+            <div class="youtubeBox">
+                <a
+                    href="https://www.youtube.com/channel/UCTsM1dSAiXqiV5oZjuNw_Bg"
+                    class="text-muted"><i class="fab fa-youtube fa-10x">
+                    </i></a>
+                <h6>Over 500 FREE Home Workouts. <br> Click to subscribe.</h3>
+            </div>
+            <div class="container2">
+                <div class="row">
+                    <div class="col">
+                        <p> THE LEAN APP IS COMING GUIDE!</p>
+                        <p class="para">Sign up now for free Guides! <i
+                                class="fas fa-link link"></i></p>
+                    </div>
+                    <div class="col">
+                        <p> Get my Cookbook!</p>
+                        <p class="para">BUY NOW <i class="fas fa-link link"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p> SHOP GYMSHARK using my link!</p>
+                        <p class="para">BUY gorgeous gym clothing NOW <i
+                                class="fas fa-link link"></i></p>
+                    </div>
+                    <div class="col">
+                        <p> 50% OFF my best selling 8 WEEK LEAN TRANSFORMATION
+                            GUIDE</p>
+                        <p class="para">BUY NOW <i class="fas fa-link link"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p> LEAN RESISTANCE BANDS</p>
+                        <p class="para">SHOP NOW <i class="fas fa-link link"></i></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- BOTTOM PAGE BOX ENDS -->
+
+
+        <!-- FOR TILTING EFFECT ON BOTTOM PAGE DIVS -->
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+	    VanillaTilt.init(document.querySelectorAll(".col"), {
+		max: 25,
+		speed: 400
+	    });
+        </script>
+
+        <!-- FOR SCROLLING EFFECT ON HEADER -->
+        <script>
+            window.addEventListener("scroll",function(){
+                let header = document.querySelector('header');
+                let Position = window.scrollY >25;
+                header.classList.toggle('windowScroll', Position); 
+            })
+            if(window.scrollY>500){
+                document.getElementById("href").href="/";
+            }
+          </script>
+    </body>
+</html>
